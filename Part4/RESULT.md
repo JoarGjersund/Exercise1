@@ -2,10 +2,10 @@ Part 4: Result
 --------------------
 
 ### What happens?
-c: The magic number is: -49145   (changes every run)
-go: The magic number is: 1302884 (changes every run)
-python: The magic number is -89197 (changes every run)
-
+c: The magic number is: -49145   (changes every run)  
+go: The magic number is: 1302884 (changes every run)  
+python: The magic number is -89197 (changes every run)  
+  
 ### Why?
 Intuetively, since we are incrementing the number 1 million times and decrementing it 1 million times one would expect the magic number to be 0 when both threads have finnished. However, because the incrementing and decrementing operations are not atomic operations, but rather consists of three operations load, increment and store, the thread may be interrupted in the middle of an operation which results in unpredictable behaviour.
 
