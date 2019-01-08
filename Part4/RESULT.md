@@ -25,14 +25,14 @@ thead 2 subtracts 1 from i=-1, making i=-2.
 thread 1 stores i=0.  
 thread 2 stores i=-2.  
   
-thread 1 loads i=0  
-thread 2 loads i=0  
-thread 1 adds 1 to i=0, making i=1.  
-thead 2 subtracts 1 from i=0, making i=-1.  
+thread 1 loads i=-2  
+thread 2 loads i=-2  
+thread 1 adds 1 to i=-2, making i=-1.  
+thead 2 subtracts 1 from i=-2, making i=-3.  
 thread 1 stores i=1.  
-thread 2 stores i=-1.  
+thread 2 stores i=-3.  
   
-thus, we end up with -1, rather than 0.  
+thus, we end up with -3, rather than 0.  
 
 
 
